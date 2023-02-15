@@ -1,0 +1,51 @@
+.box {
+    height: 150px;
+    width: 150px;
+    background-color: bisque;
+    border: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+#grand-parent {
+position: relative;
+background-color: rgb(19, 201, 201);
+}
+
+.b {
+    border: 1px solid black;    
+    padding: 20px;
+    margin: 20px;
+}
+
+#parent {
+    border:1px solid black;
+    top: 0;
+    left: 115px;
+    position: absolute;
+    z-index: 1;
+
+}
+#uparrow{
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    padding: 1rem;
+    border: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 20px;
+    bottom: 20px;
+}
+
+#child-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+}
+#child-2 {
+display: none;
+}

@@ -1,0 +1,23 @@
+
+.logo {grid-area: logo;}
+.menu {grid-area: menu;}
+.menu-icon {grid-area: button;}
+
+
+.mainmenu{
+    display: grid;
+    grid-template-areas: "logo button"
+                         "menu menu";
+}
+
+@media (min-width: 768px){
+    .mainmenu{
+       grid-template-areas: "logo menu";
+    }
+    .menu-icon {
+        display: none;
+    }
+    .menu{
+        text-align: right;
+    }
+}
